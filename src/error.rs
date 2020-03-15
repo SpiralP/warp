@@ -6,7 +6,7 @@ type BoxError = Box<dyn std::error::Error + Send + Sync>;
 
 /// Errors that can happen inside warp.
 pub struct Error {
-    inner: BoxError,
+    pub inner: BoxError,
 }
 
 impl Error {
